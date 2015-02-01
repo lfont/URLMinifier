@@ -1,0 +1,13 @@
+{
+  "name": "url-minifier",
+  "version": "0.0.1",
+  "description": "A simple url minifier.",
+  "author": "Loïc Fontaine <loicfontaine@fastmail.fm>",
+  "license": "MIT",
+  "devDependencies": {
+    "bean": "^1.0.15",
+    "bonzo": "^2.0.0",
+    "qwery": "^4.0.0",
+    "qwest": "^1.5.4"
+  }
+}

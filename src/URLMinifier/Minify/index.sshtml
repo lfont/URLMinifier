@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Url minifier</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="/Content/Minify/index.css" />
+  </head>
+  <body>
+    <h1>Url minifier</h1>
+
+    <p class="fork-it">
+      <a href="https://github.com/lfont/URLMinifier">fork it!</a>
+    </p>
+
+    <form id="formView" class="form-view" action="/api/minify" method="post">
+      <label>
+        <span class="view-input-label">Url</span>
+        <input class="view-input" name="originalUrl" type="text" placeholder="Enter url..." />
+      </label>
+      <button type="submit">minify</button>
+    </form>
+
+    <div id="errorView" class="error-view" style="display: none;"></div>
+
+    <div id="outputView" class="output-view">
+      <script class="output-view-item-template" type="text/template">
+        <li class="output-view-item">
+          <input class="view-input" type="text" readonly />
+          <span class="output-view-item-long-url">
+            <a target="_blank"></a>
+          </span>
+        </li>
+      </script>
+      <h2 class="output-view-title" style="display: none;">Minified links</h2>
+      <ul class="output-view-items"></ul>
+    </div>
+
+    <script src="/Content/main.js"></script>
+    <script src="/Content/Minify/main.js"></script>
+  </body>
+</html>
